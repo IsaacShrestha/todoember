@@ -1,4 +1,9 @@
 export default function() {
+this.get('/todos');
+this.get('/todos/:id');
+this.post('/todos');
+this.del('/todos/:id');
+this.patch('/todos/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 
