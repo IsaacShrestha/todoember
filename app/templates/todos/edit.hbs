@@ -1,6 +1,19 @@
-<p>
-  {{link-to "Todo list" "todos.index" }}
-</p>
+<div class="container">
+	<div class="row">&nbsp;</div>
+	<div class="row">
+		<div class="col-md-2">{{link-to "Back to job list" "todos.index" }}</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">&nbsp;</div>
+		<div class="col-md-6">
+			<h2>Edit Job</h2>
+			{{partial "todos/form"}}
+		</div>
+		<div class="col-md-3">&nbsp;</div>
+	</div>
 
-<h1>Edit Todo</h1>
-{{partial "todos/form"}}
+</div>
+
+
+
+

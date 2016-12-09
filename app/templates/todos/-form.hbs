@@ -1,23 +1,22 @@
-<form {{action "save" on="submit"}}>
-  <div>
-    <label>
-      Label
-      {{input type="text" value=model.label}}
-    </label>
+<form class="form-horizontal" {{action "save" on="submit"}}>
+  <div class="form-group">
+    <label class="col-lg-3 control-label">Job Title</label>
+    <div class="col-lg-8">{{input type="text" value=model.label}}</div>
   </div>
-  <div>
-    <label>
-      Text
-      {{input type="text" value=model.text}}
-    </label>
+
+  <div class="form-group">
+    <label class="col-lg-3 control-label">Job Details</label>
+    <div class="col-lg-8">{{input type="text" value=model.text}}</div>
   </div>
-  <div>
-    <label>
-      Done
-      {{input type="checkbox" checked=model.done}}
-    </label>
+
+  <div class="form-group">
+    <label class="col-lg-3 control-label">Done</label>
+    <div class="col-lg-8">{{input type="checkbox" checked=model.done}}</div>
   </div>
-  <div>
-    <input type="submit" value="Save">
+  <div class="form-group">
+     <label class="col-lg-3 control-label">Done</label>
+     <input type="submit" value="Save">
   </div>
 </form>
+
+

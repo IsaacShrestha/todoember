@@ -1,29 +1,48 @@
-{{#if signupComplete}}
-<p>Signup complete.</p>
-{{else}}
-<form {{action 'register' on='submit'}}>
-  <p>
-    <label for="username">Login</label>
-    {{input id='username' placeholder='Enter Login' value=username}}
-  </p>
-  <p>
-    <label for="email">Email</label>
-    {{input id='email' placeholder='Enter Email' value=email}}
-  </p>
-  <p>
-    <label for="password">Password</label>
-    {{input id='password' placeholder='Enter Password' type='password' value=password}}
-  </p>
-  <p>
-    <label for="confirm_password">Confirm Password</label>
-    {{input id='confirm_password' placeholder='Confirm Password' type='password' value=confirm_password}}
-  </p>
-  <p>
-    <button type="submit">Sign Up</button>
-  </p>
+<div class="container">
+  {{#if signupComplete}}
+    <div class="col-md-12">
+      <i class="fa fa-coffee">Signup complete.</i>
+  </div>
+  {{else}}
+    <form class="horizontal" {{action 'register' on='submit'}}>
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Username</label>
+            <div class="col-lg-8">
+            {{input class="form-control" id='username' placeholder='Enter Login' value=username class="form-control"}}
+            </div>
+        </div>
 
-  {{#if error}}
-  <p>{{error}}</p>
-  {{/if}}
-</form>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email</label>
+          <div class="col-lg-8">
+          {{input id='email' placeholder='Enter Email' value=email class="form-control"}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Password</label>
+          <div class="col-lg-8">
+           {{input id='password' placeholder='Enter Password' type='password' value=password class="form-control"}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Confirm Password</label>
+          <div class="col-lg-8">
+           {{input id='confirm_password' placeholder='Confirm Password' type='password' value=confirm_password class="form-control"}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-lg-3"></label>
+          <div class="col-lg-8">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+        {{#if error}}
+          <p>{{error}}</p>
+        {{/if}}
+    </form>
 {{/if}}
+</div>
+
