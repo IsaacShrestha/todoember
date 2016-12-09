@@ -4,11 +4,25 @@
       <i class="fa fa-coffee">Signup complete.</i>
   </div>
   {{else}}
+      <p>&nbsp;</p>
+      {{#if isDisabled}}
+          <div style="width: 200px; margin:0 auto;">
+             <i class="fa fa-coffee">Enter the required details to Signup</i>
+          </div>
+      {{else}}
+          <div style="width: 200px; margin:0 auto;">
+             <i class="fa fa-coffee">Thank you for the details.</i>
+          </div>
+      {{/if}}
+      <p>&nbsp;</p>
     <form class="horizontal" {{action 'register' on='submit'}}>
-        <div class="form-group">
+        <div class="form-group {{if errors.username 'has-error' }}">
             <label class="col-lg-3 control-label">Username</label>
             <div class="col-lg-8">
-            {{input class="form-control" id='username' placeholder='Enter Login' value=username class="form-control"}}
+            {{input class="form-control" id='username' placeholder='Enter Username' value=username class="form-control" autofocus="autofocus"}}
+            {{#each errors.username as |error|}}
+              <span class="hel-block">{{responseMsg}}</span>
+            {{/each}}
             </div>
         </div>
 
@@ -36,11 +50,14 @@
         <div class="form-group">
           <label class="col-lg-3"></label>
           <div class="col-lg-8">
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary" disabled={{isDisabled}}>Sign Up</button>
           </div>
         </div>
         {{#if error}}
-          <p>{{error}}</p>
+           <div class="col-md-12 alert">
+              <i class="fa fa-coffee">{{error}}</i>
+          </div>
+
         {{/if}}
     </form>
 {{/if}}

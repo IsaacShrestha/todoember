@@ -3,6 +3,19 @@ import ENV from 'todo-ember/config/environment';
 
 export default Ember.Controller.extend({
 
+  username: '',
+  email: '',
+  password: '',
+  confirm_password: '',
+
+  isValid: Ember.computed.match('email', /^.+@.+\..+$/),
+  isDisabled: Ember.computed.not('isValid'),
+  isDisabled: Ember.computed.empty('username'),
+  isDisabled: Ember.computed.empty('password'),
+  isDisabled: Ember.computed.empty('confirm_password'),
+
+  
+
   actions: {
     register() {
       let {username, email, password, confirm_password} = this.getProperties(
