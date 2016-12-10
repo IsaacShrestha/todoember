@@ -7,7 +7,7 @@ export default Ember.Component.extend({
 	actions: {
 		save: function(){
 			if(this.validate()){
-					this.sendAction('action', this.get('todos'));
+					this.sendAction('action', this.get('todo'));
 
 				}
 		}
