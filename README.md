@@ -1,7 +1,13 @@
-# Todo-ember
+# Karyalaya frontend / todo-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Todo-ember is the name of the repository that contains the frontend application for Karyalaya. This application is built with intention to keep track of the job posts.
+
+The application is built using:
+Ember version 2.8.0
+and has node of version 7.2.1
+
+Following are the prerequisites and installation guides.
+
 
 ## Prerequisites
 
@@ -15,7 +21,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/IsaacShrestha/todoember.git
 * `cd todo-ember`
 * `npm install`
 * `bower install`
@@ -50,4 +56,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
