@@ -56,3 +56,15 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+  
+#User guide
+
+This application allows you to do the followings:
+* Register your account
+* Login using the username and password
+* Add the jobs 
+
+When you come to the website for the first time, to begin using the service you need to register as either a job seeker or a job poster. Once, you are registered you can login using username and password.
+
+In this version only job poster's panel is fully functional. As soon as you login as job poster, your dashboard will be empty. By choosing add new job you can add the job. You can select add, edit and delete the jobs from your dashboard as a job poster.
