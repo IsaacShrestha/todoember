@@ -1,11 +1,3 @@
-# Karyalaya frontend / todo-ember
-
-Todo-ember is the name of the repository that contains the frontend application for Karyalaya. This application is built with intention to keep track of the job posts.
-
-The application is built using:
-Ember version 2.8.0
-and has node of version 7.2.1
-
 Following are the prerequisites and installation guides.
 
 
